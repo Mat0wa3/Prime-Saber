@@ -1,0 +1,173 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: url(../img/fondo2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: sans-serif;
+    height: 100vh;
+}
+
+img.escudo {
+    border-radius: 50%;
+    height: 60px;
+
+}
+
+.login {
+    width: 320px;
+    height: 420px;
+    background: rgb(0, 0, 0, 0.6);
+    margin: auto;
+    box-sizing: border-box;
+    margin-top: 50px;
+    border-radius: 20px;
+    font-size: 19px;
+    box-shadow: 7px 13px 37px #000;
+    padding: 40px;
+    color: black;
+}
+
+.login .avatar {
+    width: 35%;
+    margin-top: -75px;
+    margin-bottom: 40px;
+    border-radius: 50%;
+}
+
+.login h2 {
+    margin: 0;
+    padding: 0 0 20;
+    text-align: center;
+    font-size: 22px;
+    color: white;
+}
+.controls {
+    font-size: 16px;
+    padding: 1px 0;
+    color: white;
+    background: none;
+}
+/* Reposo */
+div
+{
+    margin-bottom: 15px;
+    padding-top: 10px;
+}
+.text-nom,
+input
+{
+    font: 16px/16px verdana;
+    padding: 0;
+    color: white;
+}
+.lbl-nom
+{
+    display: block;
+    width: 100%;
+    height: 30px;
+    border-bottom: 2px solid silver;
+    padding: 8px 10px;
+    position: relative;
+    box-sizing: border-box;
+    border-radius: 4px;
+    pointer-events: none;
+    transition: all .25s ease-in-out;
+}
+.lbl-nom input
+{
+    display: block;
+    width: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    pointer-events: all;
+}
+.lbl-nom span
+{
+    color: silver;
+    position: absolute;
+    top: 4px;
+    left: 10px;
+    transition: all .25s ease-in-out;
+}
+/* Focus */
+.lbl-nom.focus
+{
+    border-color: gold;
+}
+.lbl-nom span.focus
+{
+    color: gold;
+}
+/* Top */
+.lbl-nom span.top
+{
+    left: 2px;
+    top: -10px;
+    font-size: 12px;
+    padding: 0 5px;
+}
+.icon-users{
+    position: absolute;
+    top: 22px;
+    color: white;
+    margin-left: -35px;
+}
+
+.icon-user{
+    position: absolute;
+    top: 19px;
+    color: white;
+    margin-left: -35px;
+}
+
+.icon-key{
+    position: absolute;
+    top: 19px;
+    color: white;
+    margin-left: -35px;
+}
+.centrar-form {
+    width: 100%;
+    font-size: 18px;
+    border: none;
+    border-bottom: 2px solid #FFFFFF;
+    color: white;
+    outline: none;
+    background: transparent;
+    margin-bottom: 10px;
+}
+.botons {
+    width: 100%;
+    height: 40px;
+    background: transparent;
+    border: 2px solid #ffb31c;
+    border-radius: 20px;
+    outline: none;
+    padding: 10px;
+    color: #ffb31c;
+    margin: 16px 0;
+    font-size: 14px;
+    cursor: pointer;
+    font-weight: bold;
+}
+.botons:hover{
+    background: #ffb31c;
+    color: white;
+}
+.login input {
+    width: 100%;
+    margin-bottom: 20px;
+}
+.listado {
+    color: black;
+}
+
+.login a {
+    text-align: center;
+    text-decoration: none;
+    font-size: 14px;
+    line-height: 20px;
+    color: #ffffff;
+}

@@ -1,0 +1,40 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Open Sans', sans-serif; 
+    background: url(../img/mision-vision.jpg);
+    background-repeat: no-repeat; 
+    background-position: center center;
+    background-size:cover;
+}
+
+.contenedor-nosotros{
+    width: 200%;
+    max-width: 1000px;
+    margin: auto;
+    padding: 185px;
+    background: linear-gradient(120deg, #f6d465d0 0%, #fd9f85cb 100%);
+    margin-top: 90px;
+}
+
+.contenedor-nosotros p{
+    font-size: 16px;
+}
+
+.contenedor-nosotros img{
+    width: 300px;
+    float: left;
+}
+
+.subtitulo{
+    text-align: center;
+    font-weight: 300;
+    color: #000;
+    margin-bottom: 40px;
+    font-size: 40px;
+  }
+
