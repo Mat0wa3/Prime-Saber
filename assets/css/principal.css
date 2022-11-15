@@ -1,0 +1,119 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: sans-serif;
+    height: 80vh;
+}
+
+main, fieldset{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    padding: 40px;
+}
+
+.section__img{
+    height: 180px;
+}
+
+/* body */
+
+.container{
+    width: 100%;
+    display: flex;
+    max-width: 1100px;
+    height: 100%;
+    transition: all .3s ease;
+}
+
+.controls {
+    border: none;
+    outline: none;
+    width: 100%;
+    border-bottom: 1px solid silver;
+    padding: 12px;
+    margin: 10px;
+}
+
+.prueba_respuesta_1,
+.prueba_respuesta_2,
+.prueba_respuesta_3,
+.prueba_respuesta_4 {
+    display: flex;
+    justify-content: center;
+    margin: 10px auto;
+}
+.respuesta__estado h3,
+.respuesta__estado input {
+    width: 100%;
+    margin: 5px;
+}
+
+.respuesta__estado {
+    display: flex;
+    margin: 20px;
+}
+
+.card{
+    max-width: 300px;
+    min-width: 220px;
+    max-height: 540px;
+    margin: 20px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-decoration: none;
+    border-radius: 15px;
+    overflow: hidden;
+    background: #fff;
+    box-shadow: 3px 5px 15px rgba(0,0,0,.2);
+    cursor: pointer;
+    transition: all 400ms ease-in-out;
+}
+
+.card:hover{
+    box-shadow: 5px 5px 20px rgba(0,0,0,.4);
+    transform: translateY(-3%);
+}
+
+.card img{
+    height: 220px;
+    margin-left: 5px;
+}
+
+.card .contenido{
+    padding: 15px;
+    text-align: center;
+}
+
+.card .contenido p{
+    line-height: 1.5;
+    color: #6a6a6a;
+}
+
+.card .contenido h3{
+    font-weight: 400;
+    margin-bottom: 15px;
+}
+
+.card .contenido{
+    text-decoration: none;
+    display: inline-block;
+    padding: 10px;
+    margin-top: 10px;
+    color: #2fb4cc;
+}
+
+@media screen and (max-width: 628px) {
+    .container{
+        display: flex;
+        flex-direction: column;
+    }
+}
