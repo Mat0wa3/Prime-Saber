@@ -41,8 +41,8 @@ td {
 }
 
 thead {
-  background-color: #632424;
-  border-bottom: 5px solid #360f0f;
+  background-color: #ff7824;
+  border-bottom: 5px solid #9c4a17;
   color: #fff;
 }
 
@@ -51,6 +51,6 @@ tr:nth-child(even) {
 }
 
 tr:hover td{
-  background-color: #963636;
+  background-color: #9c4a17;
   color: #fff;
 }

@@ -25,7 +25,7 @@ $conexion = Database::connect();
             <figure>
                 <img src="../assets/img/escudo.png" alt="logo" height="120px">
             </figure>
-            <h2>Institución Educativa Barrio Santander</h2>
+            <h2>Prime Saber</h2>
             <div class="perfil">
                 <a href="./principal.php">
                     <figure>
@@ -41,11 +41,11 @@ $conexion = Database::connect();
         <form method="post">
             <div class="container">
                 <?php
-                @$materia = $_GET['materia'];
+                @$examen = $_GET['examen'];
 
                 $n = 0;
                 $i = 0;
-                $pregunta_sel = $conexion->query("SELECT * FROM pregunta WHERE id_materia=$materia");
+                $pregunta_sel = $conexion->query("SELECT * FROM pregunta WHERE id_examen=$examen");
 
                 while ($pregunta = $pregunta_sel->fetch_object()) {
                     $idp = $pregunta->id;

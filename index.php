@@ -16,7 +16,7 @@
         <img  src="./assets/img/hamburguesa.svg"  alt="" class="hamburguer">
         <nav class="menu-navegacion">
             <div class="options__menu">
-                <a href="./Vista/usuario/SignUp.php">
+                <a href="./Vista/principal.php?control=ingresar">
                     <div class="option">
                         <i class="fa-solid fa-key"></i>
                         <h4>Ingresar</h4>
@@ -44,7 +44,7 @@
         </nav>
 
         <div class="contenedor head">
-            <h1 class="titulo">Institución Educativa Barrio Santander</h1>
+            <h1 class="titulo">Prime Saber</h1>
             <p class="decoracion">"Hacia una cultura para el desarrollo sostenible"</p>
         </div>
     </header>
@@ -75,11 +75,11 @@
                 <h2 class="subtitulo">Galería</h2> 
                 <div class="contenedor-galeria">
                     <img class="img-galeria" src="./assets/img/uno.jpg" alt="auditorio">
-                    <img class="img-galeria" src="./assets/img/dos.jpg" alt="bloques">
+                    <img class="img-galeria" src="./assets/img/dos.png" alt="bloques">
                     <img class="img-galeria" src="./assets/img/tres.jpg" alt="patio">
                     <img class="img-galeria" src="./assets/img/cuatro.jpg" alt="parqueadero">
                     <img class="img-galeria" src="./assets/img/cinco.jpg" alt="huerta">
-                    <img class="img-galeria" src="./assets/img/seis.jpg" alt="patio2">
+                    <img class="img-galeria" src="./assets/img/seis.png" alt="patio2">
                 </div>
             </div>
         </section>

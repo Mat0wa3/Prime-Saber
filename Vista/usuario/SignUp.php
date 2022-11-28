@@ -24,7 +24,7 @@ include('../../Controlador/usuarioControlador.php');
             <figure>
                 <img src="../../assets/img/escudo.png" alt="logo" height="80px">
             </figure>
-            <h2>Institución Educativa Barrio Santander</h2>
+            <h2>Prime Saber</h2>
             <div class="back">
                 <a href="../../index.php">
                     <i class="fa-solid fa-arrow-left"></i>
@@ -55,7 +55,7 @@ include('../../Controlador/usuarioControlador.php');
                         <option value="estudiante">Estudiante</option>
                     </select>
                     <input name="pass" type="password" placeholder="Contraseña">
-                    <input name="registro" type="submit" onclick="save()" value="Registrarse">
+                    <input name="registro" type="submit" value="Registrarse">
                 </div>
             </form>
         </div>

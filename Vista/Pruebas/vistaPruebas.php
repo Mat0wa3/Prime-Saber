@@ -1,42 +1,21 @@
-<div class="container">
-    <a class="card" href="./Prueba.php?materia=3">
+<?php
+$conexion = Database::connect();
+$sql = $conexion->query("SELECT id, nombre_prueba, id_materia FROM examen WHERE id NOT IN (SELECT id_examen FROM tb_prueba);");
+
+echo "<a href='./principal.php?control=usuario'>Volver</a>";
+echo "<div class='container'>";
+
+while ($examen = $sql->fetch_object()) {
+    ?>
+    <a class="card" href="./Prueba.php?examen=<?php echo $examen->id ?>&materia=<?php echo $examen->id_materia ?>">
         <div class="card__title">
-            <h1>Matemáticas</h1>
+            <h1><?php echo $examen->nombre_prueba ?></h1>
         </div>
         <div class="card__contenido">
-            <p>Presiona aquí para iniciar tu examen de matematicas</p>
+            <p>Presiona aquí para iniciar tu examen <?php echo $examen->nombre_prueba ?></p>
         </div>
     </a>
-    <a class="card" href="./Prueba.php?materia=4">
-        <div class="card__title">
-            <h1>Sociales</h1>
-        </div>
-        <div class="card__contenido">
-            <p>Presiona aqui para iniciar tu examen de sociales</p>
-        </div>
-    </a>
-    <a class="card" href="./Prueba.php?materia=6">
-        <div class="card__title">
-            <h1>Lectura crítica</h1>
-        </div>
-        <div class="card__contenido">
-            <p>Presiona aquí para iniciar tu examen de lectura critica</p>
-        </div>
-    </a>
-    <a class="card" href="./Prueba.php?materia=5">
-        <div class="card__title">
-            <h1>Ciencias</h1>
-        </div>
-        <div class="card__contenido">
-            <p>Presiona aquí para iniciar tu examen de ciencias</p>
-        </div>
-    </a>
-    <a class="card" href="./Prueba.php?materia=7">
-        <div class="card__title">
-            <h1>Inglés</h1>
-        </div>
-        <div class="card__contenido">
-            <p>Presiona aquí para iniciar tu examen de ingles</p>
-        </div>
-    </a>
+    <?php
+}
+?>
 </div>

@@ -42,7 +42,7 @@ body{
 
 
 .escudo{
-    
+    top: 0;
     border-radius: 50%;
     height: 120px;
     position: fixed;
@@ -112,7 +112,7 @@ header nav a:hover{
     right: 0;
     width: 21vw;
     height: 100%;
-    background-image: linear-gradient(120deg, #92000A 0%, #c00310 100%);
+    background-image: linear-gradient(120deg, #406ebd 0%, #5995fd 100%);
     transition: transform .3s ease-out;  
     transform: translate(110%);
     box-shadow: 0 0 6px rgba(0, 0, 0, .5);
@@ -175,12 +175,12 @@ header nav a:hover{
 
 .n-service{
     margin-bottom: 7px;
-    color: #fe3a3a;
+    color: #5995fd;
 }
 
 .number{
     display: inline-block;
-    background-image: linear-gradient(120deg, #f66565 0%, #fd8585 100%);
+    background-image: linear-gradient(120deg, #406ebd 0%, #5995fd 100%);
     width: 30px;
     height: 30px;
     color: #FFF;
