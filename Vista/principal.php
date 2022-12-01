@@ -48,6 +48,7 @@ require("../Modelo/db.php");
         <footer><?php require_once("./layout/footer.php") ?></footer>
         <?php
     } else if ($control == "editarU") {
+        echo "<link rel='stylesheet' href='../assets/css/ingresar.css'>";
         require_once("./usuario/editarUsuario.php");
     }
     ?>

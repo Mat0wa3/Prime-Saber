@@ -11,7 +11,7 @@ if (!empty($_POST["actualizar"])) {
         $estado=$_POST["estado"];
         $sql=$conexion->query(" UPDATE usuario SET nombre='$nombre', apellido='$apellidos', mail='$email', rol='$rol', estado='$estado' WHERE id='$id' ");
         if ($sql==1) {
-            header("location: ../principal.php ");
+            header("location: ./principal.php?control=usuario ");
         } else {
             echo "<div class='error'>Error al modificar!</div>";
         }

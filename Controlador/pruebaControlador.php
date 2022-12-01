@@ -9,7 +9,7 @@ if (!empty($_POST['crear'])) {
         $materia = $_POST['txtMateria'];
         $nombre_prueba = $_POST['txtExamen'];
         $id_encargado = $_POST['id'];
-        $sql_examen = $conexion->query("INSERT INTO examen VALUES (NULL, '$id_encargado', '$materia', '$nombre_prueba', '$tiempo')");
+        $sql_examen = $conexion->query("INSERT INTO examen VALUES (NULL, '$id_encargado', '$nombre_prueba', '$materia', '$tiempo')");
         if ($sql_examen == 1) {
             echo "<script>
             alert('El examen se creo!');
